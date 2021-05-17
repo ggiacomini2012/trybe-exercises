@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 3px;
+}
+
+div:hover {
+  border: solid black 1px;
+  border-radius: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+div {
+  margin: 5px;
+  border-radius: 15px;
+}
+
+#d1 {
+  background-color: rgb(226, 86, 43);
+  color: rgba(0, 0, 0, 0.603);
+}
+#d2 {
+  background-color: rgb(43, 226, 67);
+  color: rgba(0, 0, 0, 0.603);
+}
+#d3 {
+  background-color: rgb(186, 226, 43);
+  height: 35px;
+  padding: 5px 0px 0px 0px;
+  color: rgba(0, 0, 0, 0.603);
+}
+#d4 {
+  background-color: rgb(226, 43, 122);
+  color: rgba(0, 0, 0, 0.603);
+}
+#d5 {
+  background-color: rgb(43, 147, 226);
+  color: rgba(11, 10, 10, 0.735);
+}
+
+#h3a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: line-through;
+}
+
+#h3b {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+
+#h3c {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: overline;
+}
+
+#h3d {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: dotted;
+}
+
+#h3e {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: wavy;
+}
+
+.impar {
+  font-style: italic;
+}
+
+/* <!-- EXERCÍCIOS
+Estilize as divs para que, ao passar o cursor por cima das mesmas, elas
+     ganhem uma borda.
+Faça cada div ter uma cor própria.
+Estilize cada uma das tags <h3>.
+Faça a terceira div ser maior que as demais.
+Deixe as tags ímpares <h3> com o texto em itálico.
+
+   --> */
