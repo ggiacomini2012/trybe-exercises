@@ -8,6 +8,7 @@ div {
 
   .main-content {
     background-color: yellow;
+    color: blue;
   }
 
   .main-content .center-content {
