@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.1A</title>
+</head>
+<body>
+    <div id="paiDoPai">
+        <div id="pai">
+          <div id="primeiroFilho"></div>
+          <div id="elementoOndeVoceEsta">
+            <div id="primeiroFilhoDoFilho"></div>
+            <div id="segundoEUltimoFilhoDoFilho"></div>
+          </div>
+          Atenção!
+          <div id="terceiroFilho"></div>
+          <div id="quartoEUltimoFilho"></div>
+        </div>
+      </div>
+      <script>
+      // paiDoPai
+      //pai
+      //elementoOnde...
+      //primeiroFilho...
+      document.body.firstElementChild.firstElementChild.removeChild(document.body.firstElementChild.firstElementChild.children[0]);
+      document.querySelector('#pai').removeChild(document.querySelector('#pai').children[1]);
+      document.querySelector('#pai').removeChild(document.querySelector('#pai').children[1]);
+      document.querySelector('#elementoOndeVoceEsta').removeChild(document.querySelector('#elementoOndeVoceEsta').children[1]);
+      </script>
+</body>
+</html>
