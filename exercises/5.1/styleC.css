@@ -9,6 +9,7 @@ div {
   .main-content {
     background-color: yellow;
     color: blue;
+    /* text-transform: lowercase; */
   }
 
   .main-content .center-content {
