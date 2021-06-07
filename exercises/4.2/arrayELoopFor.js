@@ -75,3 +75,10 @@ for (let index = 0; index < 25; index +=1){
 }
 
 console.log(novoArray);
+
+let n = 9
+let resultadoA = 100
+for (let index = 0; index <= n; index += 1){
+    resultadoA -= index;
+}
+console.log(resultadoA);
