@@ -7,6 +7,7 @@ body {
     justify-content: center;
     overflow: hidden;
     width: 100vw;
+    height: 100%;
   }
   
   h1 {
@@ -46,7 +47,7 @@ body {
   .card {
     border-radius: 5px;
     color: white;
-    display: none;
+    /* display: none; */
     flex-flow: row wrap;
     height: 200px;
     margin: 20px;
@@ -63,5 +64,39 @@ body {
   }
   
   .card:nth-of-type(3) {
+      display: flex;
     background-color: #41197f;
   }
+
+  @media screen and (min-width: 400px) {
+      .card:nth-of-type(1) {
+          color: #0255c2;
+          display: flex;
+          margin: 30px auto;
+      }
+  }
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .card:nth-of-type(2) {
+        color: #ffffff;
+        display: flex;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 950px) {
+    .card:nth-of-type(3) {
+        color: #ffffff;
+        display: none;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 500px)  {
+   body p:nth-child(5) {
+        color: #525252 !important;
+        /* background-color: red; */
+        display: flex;
+        /* margin: 30px auto; */
+    }
+}
