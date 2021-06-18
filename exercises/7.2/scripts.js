@@ -20,6 +20,14 @@ const student1 = {
   SoftSkills: "Ótimo",
 };
 
+const student2 = {
+    Html: 'Bom',
+    Css: 'Ótimo',
+    JavaScript: 'Ruim',
+    SoftSkills: 'Ótimo',
+    Git: 'Bom', 
+  };
+
 let huy = "lineOne";
 huy += `
 lineTwo`;
@@ -31,7 +39,7 @@ linha2
 lineThree`);
 
 function turnObjectToText(object) {
-  for (let index = 0; index < Object.keys(student1).length; index += 1) {
+  for (index in Object.keys(object)) {
     const hability = Object.keys(object)[index];
     const level = Object.values(object)[index];
     const text = `${hability}, Nível: ${level}.`;
@@ -39,4 +47,8 @@ function turnObjectToText(object) {
   }
 }
 
+console.log('student1')
 turnObjectToText(student1);
+
+console.log('student2')
+turnObjectToText(student2);
