@@ -1,9 +1,13 @@
 const assert = require('assert');
 
-function division(x, y) {
-  if (y === 0) throw new Error('parameter y must not be 0');
-  return x / y;
+function sum(a, b) {
+    console.log('error bep bop')
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('parameters must be numbers');
+  }
+
+  return a + b;
 }
 
-assert.strictEqual(division(10, 2), 5); // OK
-assert.throws(() => { division(10, 0); }, /^Error: parameter y must not be 0$/); // OK
+console.log(sum(1, 3));
+console.log(sum('a', 3));
