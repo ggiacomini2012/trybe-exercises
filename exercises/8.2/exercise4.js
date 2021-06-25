@@ -63,8 +63,4 @@ const books = [
   },
 ];
 
-function authorBornIn1947() {
-     return books.find(element => element.author.name === 'Stephen King').author.name
-  }
-  
-  assert.strictEqual(authorBornIn1947(), 'Stephen King');
+// a fazer
