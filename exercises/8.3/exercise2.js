@@ -1,3 +1,4 @@
+const assert = require('assert');
 
 const books = [
   {
@@ -62,6 +63,44 @@ const books = [
   },
 ];
 
-console.log(books);
+const expectedResult = [
+  {
+    age: 31,
+    author: 'Isaac Asimov',
+  },
+  {
+    age: 38,
+    author: 'H. P. Lovecraft',
+  },
+  {
+    age: 39,
+    author: 'Stephen King',
+  },
+  {
+    age: 43,
+    author: 'George R. R. Martin',
+  },
+  {
+    age: 45,
+    author: 'Frank Herbert',
+  },
+  {
+    age: 62,
+    author: 'J. R. R. Tolkien',
+  },
+];
+
 console.log(books.map(e => e.author.birthYear))
-const bob = (books.map(e => e.releaseYear - e.author.birthYear))
+console.log(books.map(e => e.releaseYear ))
+console.log(books.map(e => e.releaseYear - e.author.birthYear))
+console.log(books.map((e) => (e.releaseYear - e.author.birthYear)).sort())
+console.log(books.map((e, i)  => books.map((e) => '' + (e.releaseYear - e.author.birthYear)).sort()[i]))
+// console.log(books.map(e => e.author.name))
+
+
+function nameAndAge() {
+  const novoArray = books.map((e, i) => ({age: books.map(e => e.releaseYear - e.author.birthYear)[i], author: e.author.name})).sort((a, b) => a.age - b.age)
+  return novoArray.sort((a, b) => a.age - b.age)
+}
+
+assert.deepStrictEqual(nameAndAge(), expectedResult);
