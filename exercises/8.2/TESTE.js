@@ -61,3 +61,6 @@ const books = [
       releaseYear: 1928,
     },
   ];
+
+  console.log(books);
+  
