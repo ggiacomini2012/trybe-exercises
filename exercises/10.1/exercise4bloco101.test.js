@@ -1,9 +1,9 @@
 const hydrate = require("./exercise4bloco101.js");
 
-describe("Testa a função hydrate", () => {
-  it("Testa se a função hydrate é definida", () => {
-    expect(hydrate).toBeDefined();
-  });
+describe('Testa a função hydrate', () => {
+    it('Testa se a função hydrate é definida', () =>{
+        expect(hydrate).toBeDefined();
+    });
   it("Testa se hydrate é uma função", () => {
     expect(typeof hydrate).toBe("function");
   });

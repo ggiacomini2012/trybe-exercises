@@ -10,7 +10,7 @@ describe('Testa a função encode e decode', () => {
   });
   it('converte apenas a vogal "a" no número 1', () => {
     expect(encode('ana')).toEqual('1n1');
-  });
+   });
   it('converte a vogal "e" no número 2', () => {
     expect(encode('ele')).toEqual('2l2');
   });
