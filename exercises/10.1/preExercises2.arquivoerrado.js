@@ -3,7 +3,10 @@ const {
   greetingMessage,
   loginErrorMessage,
   verifyCredentials,
-} = require("./preExercises2");
+} = require("./preExercises2arquivoerrado");
+
+userName = require("./preExercises2arquivoerrado");
+password = require("./preExercises2arquivoerrado");
 
 describe("a função verifyCredentials()", () => {
   

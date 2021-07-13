@@ -1,5 +1,5 @@
-const sum = (a, b) => a + b;
+const sum1 = (a, b) => a + b;
 
 test('sums two values', () => {
-  expect(sum(2, 3)).toEqual(5);
+  expect(sum1(2, 3)).toEqual(5);
 });
