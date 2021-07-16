@@ -19,6 +19,6 @@ describe("sum", () => {
   test('error message is "parameters must be numbers"', () => {
     expect(() => {
       sum(4, "5");
-    }).toThrow(/parameters must be numbers/);
+    }).toThrowError(new Error('parameters must be numbers'));
   });
 });
