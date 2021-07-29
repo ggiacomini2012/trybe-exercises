@@ -1,0 +1,3 @@
+[submodule "exercise-dog-image"]
+	path = exercise-dog-image
+	url = git@github.com:tryber/exercise-dog-image.git
