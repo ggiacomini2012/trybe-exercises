@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      nome: '',
-      email: '',
+      nome: "",
+      email: "",
     };
   }
 
   handleInput(e) {
     const { name, value } = e.target;
-    console.log(name, value);
+    // console.log(name, value);
     this.setState({ [name]: value });
   }
 
@@ -23,7 +23,8 @@ class App extends React.Component {
           Nome:
           <input
             onChange={(e) => this.handleInput(e)}
-            name='nome'
+            name="nome"
+            data-testid='input-nome'
             value={this.state.nome}
           />
         </p>
@@ -31,7 +32,8 @@ class App extends React.Component {
           E-mail:
           <input
             onChange={(e) => this.handleInput(e)}
-            name='email'
+            name="email"
+            data-testid='input-email'
             value={this.state.email}
           />
         </p>
