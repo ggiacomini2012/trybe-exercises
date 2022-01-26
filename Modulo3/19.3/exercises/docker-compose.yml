@@ -1,0 +1,35 @@
+  version: '3'
+
+  services:
+
+    ghost:
+      image: ghost:1-alpine
+      ports:
+        - 2368:2368
+      depends_on:
+        - "db"
+      environment:
+        # see https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables
+        database__client: "mysql"
+        database__connection__host: db
+        database__connection__use: root
+        database__connection__password: "123"
+        database__connection__databas: ghost
+
+    db:
+      image: mysql:5.7
+      restart: always
+      environment:
+        MYSQL_ROOT_PASSWORD: "123"
+      volumes:
+      - db-data:/var/lib/mysql
+      networks:
+      - my-network
+
+    volumes:
+      db-data:
+        - db-data:/var/lib/mysql
+
+    networks:
+      my-network: 
+        - my-network
