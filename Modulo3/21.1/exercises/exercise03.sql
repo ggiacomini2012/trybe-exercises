@@ -1,0 +1,3 @@
+SELECT JOB_ID, AVG(salary) AS A FROM hr.employees
+GROUP BY JOB_ID
+ORDER BY A DESC;
