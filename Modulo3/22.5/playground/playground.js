@@ -94,7 +94,8 @@ app.all('*', function (req, res) {
 
 app.listen(
   3002,
-  console.log(bob()),
+  console.log(bob(), 'AQUI'),
+  console.log(),
   console.log(recipes.length + 1),
   console.log(recipes[5]),
   console.log(recipeIndex)
