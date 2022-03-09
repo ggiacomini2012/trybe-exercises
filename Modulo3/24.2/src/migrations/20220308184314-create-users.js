@@ -1,33 +1,33 @@
+// cole esse código dentro do arquivo da migration "users"
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('Users', {
-      id: {
+      userId: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
+        field: 'user_id',
       },
-      fullName: {
-        type: Sequelize.STRING,
-field: 'full_name',
-      },
-      email: {
-        type: Sequelize.STRING,
-      },
-      createdAt: {
+      firstName: {
         allowNull: false,
-        type: Sequelize.DATE,
-           field: 'created_at', // a coluna será criada no banco com este nome
+        type: Sequelize.STRING,
+        field: 'first_name',
       },
-      updatedAt: {
+      lastName: {
         allowNull: false,
-        type: Sequelize.DATE,
-           field: 'updated_at', // a coluna será criada no banco com este nome
-      }
+        type: Sequelize.STRING,
+        field: 'last_name',
+      },
+      age: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+      },
     });
   },
 
-  down: async (queryInterface, Sequelize) => {
+  down: async (queryInterface, _Sequelize) => {
     await queryInterface.dropTable('Users');
-  }
+  },
 };

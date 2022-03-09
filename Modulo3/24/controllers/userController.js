@@ -9,7 +9,8 @@ router.get('/', async (_req, res) => {
 
     return res.status(200).json(users);
   } catch (e) {
-    res.status(500).json({ message: 'Algo deu errado' });
+    console.log(e);
+    res.status(500).json({ message: e});
   };
 });
 // Este endpoint usa o método findByPk do Sequelize para buscar um usuário pelo id.
